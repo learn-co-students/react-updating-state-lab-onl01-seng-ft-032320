@@ -32,9 +32,14 @@ export default class YouTubeDebugger extends Component {
     }
     handleRe =()=>{
      this.setState({
-        video:{
-            ...this.state.video,
-            resolution:'720p'
+        
+        settings: {
+            ...this.state.settings,
+            video: {
+                ...this.state.settings.video,
+                resolution: '720p'
+              }
+              
         }
 
      })
@@ -50,9 +55,3 @@ export default class YouTubeDebugger extends Component {
         )
     }
 }
-// this.setState({
-//     addressInfo: {
-//       ...this.state.addressInfo,
-//       city: 'New York City'
-//     }
-//   });
